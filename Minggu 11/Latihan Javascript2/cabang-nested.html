@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Percabangan Nested</title>
+</head>
+<body>
+	<script>
+		var username = prompt("Username : ");
+		var password = prompt("Password : ");
+
+		if(username == "belajarkode"){
+			if(password == "kopi"){
+				document.write("<h2>Selamat Datang Boss! </h2>");
+			}else {
+			document.write("<p>Password Anda Salah , Coba Lagi ! </p>");
+		}
+	} else {
+		document.write("<p>Anda Tidak Terdaftar ! </p>");
+	}
+
+	//Penyederhanaan dengan && 
+	//if(username == "belajarkode" && password == "kopi"){
+ 	//		document.write("<h2>Selamat datang pak bos!</h2>");
+	//	} else {
+ 	//	document.write("<p>Password salah, coba lagi!</p>");
+	//	}
+	</script>
+</body>
+</html>
