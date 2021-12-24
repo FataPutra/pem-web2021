@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script>
+		//MEMBUAT FUNGSI
+		var sayhello = () => alert("Hello World !!!");
+	</script>
+</head>
+<body>
+	<!-- MEMANGGIL FUNGSI SAAT LINK DI KLIK -->
+
+	<a href="#" onclick="sayhello()">Klik AKU ! </a>
+	<script>
+		function bagi(a,b){
+		 hasilBagi = a / b;
+		 return hasilBagi;
+		}
+		// memanggil fungsi
+		var nilai1 = 100;
+		var nilai2 = 5;
+		var hasilPembagian = bagi(nilai1, nilai2);
+		console.log(hasilPembagian); //-> 20
+	</script>
+</body>
+</html>
