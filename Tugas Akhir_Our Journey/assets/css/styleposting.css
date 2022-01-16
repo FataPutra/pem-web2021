@@ -1,0 +1,147 @@
+*{
+    line-height: 20px;
+
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body  {
+    margin: 0px;
+    padding: 0px;
+    background: #ECEBEB
+}
+
+.layar {
+    width: 1000px;
+    margin: auto;
+}
+
+nav {
+    z-index: 100;
+    top: 0;
+    background: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+
+nav .logo img {
+    width: 200px;
+    vertical-align: middle;
+}
+
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+
+nav .menu img {
+    max-width: 120px;
+    max-height: 30px;
+    vertical-align: middle;
+}
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: black;
+    text-align: center;
+    padding: 0px 12px 0px 12px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Rokkitt', serif;
+    font-family: 'Signika', sans-serif;
+}
+
+nav ul li a:hover{
+    text-transform: uppercase;
+}
+
+nav ul li a img:hover {
+    transform: scale(1.1);
+}
+/* Akhir Nav */
+section {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 20px;
+    padding: 50px 0px 50px 0px;
+}
+section.posting form{
+    background: white;
+    border: 1px solid #b1b1b1;
+}
+
+.avatar {
+    padding: 10px 0px 10px 10px;
+}
+
+.username {
+    padding: 10px 0px 10px 10px;
+}
+
+.gambar {
+     padding: 10px 0px 10px 10px;
+}
+
+.caption {
+     padding: 10px 0px 10px 10px;
+}
+
+.caption textarea{
+    margin-top: 10px;
+    padding: 10px 0px 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.button-post {
+    text-align: center;
+}
+.posting-button {
+    width: 80%;
+    background-color: #3BD8FB;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.posting-button:hover {
+    background-color: #04A1C3;
+    transform: scale(1.1);
+}

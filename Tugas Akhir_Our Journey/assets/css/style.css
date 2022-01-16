@@ -1,0 +1,383 @@
+*{
+    line-height: 20px;
+    font-size: 15px;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body  {
+    margin: 0px;
+    padding: 0px;
+}
+
+.layar-dalam{
+    width: 1200px;
+    margin: auto;
+}
+
+.layar-penuh{
+    width: 100%;
+} 
+
+nav {
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+
+nav .logo img {
+    width: 200px;
+    vertical-align: middle;
+}
+
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+
+nav .menu img {
+    max-width: 120px;
+    max-height: 30px;
+    vertical-align: middle;
+}
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+
+nav ul li a {
+    color: black;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Rokkitt', serif;
+    font-family: 'Signika', sans-serif;
+}
+
+nav ul li a:hover{
+    text-transform: uppercase;
+}
+
+nav ul li a img:hover {
+    transform: scale(1.1);
+
+}
+
+/* TOMBOL MENU KETIKA MINIMIZE */
+.tombol-menu {
+    position: absolute;
+    top : 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: white;
+}
+
+ /* untuk efek scroll pada nav */
+nav.background-scroll {
+     background-color:#DCDCDC;
+}
+
+nav.background-scroll .tombol-menu .garis{
+    background-color: #333;
+}
+
+/* Akhir Nav */
+
+/* Pengaturan Header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+header .intro {
+    z-index: 100;
+    color : #fff;
+    text-align: center;
+    position: relative;
+    top : 50%;
+}
+
+header .intro h3 {
+    font-size: 50px;
+    font-family: 'Rokkitt', serif;
+    font-family: 'Signika', sans-serif;
+    margin:0;
+    padding: 0;
+    opacity: 75%;
+}
+
+header .intro p {
+    font-family: 'Rokkitt', serif;
+    font-family: 'Signika', sans-serif;
+}
+
+.tombol {
+    background-color: #000;
+    height: 40px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding : 0px 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    font-family: 'Rokkitt', serif;
+    font-family: 'Signika', sans-serif;
+    font-family: 'Spectral', serif;
+}
+
+.tombol:hover{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 50%;
+}
+
+/* PESONA INDONESIA */
+
+section.galeri .gambar-pertama img{
+    width: 392px;
+    height: 251px;
+    border-radius: 5px;
+}
+
+
+.galery p.pesona-indo {
+    font-size: 15px;
+    display: flex;
+    text-align: justify;
+    margin: 0px;
+    padding: 20px 0px 20px 20px;
+    font-family: 'Rokkitt', serif;
+    font-family: 'Signika', sans-serif;
+}
+
+section.galeri .gambar-pertama img:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+/* Akhir PESONA INDONESIA */
+
+/* GALERI */
+
+
+section.galeri {
+    background-color: #f5f6f6;
+    overflow: hidden;
+}
+
+section h4 {
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+section h4::after{
+    content: "";
+    border-bottom: 5px solid grey;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+
+section h6 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.galery .gambar-galeri {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.galery .gambar-galeri img {
+    padding: 20px 30px 20px 30px;
+    width: 312px;
+    display: flex;
+}
+
+.galery .gambar-galeri img:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.galery p.teks-galeri {
+    text-align: center;
+    font-weight: bold;
+}
+
+.galery p {
+    font-size: 15px;
+}
+/* AKHIR GALERI */
+
+/* KONTEN ABOUT US ATAU SECTION */
+section {
+    padding: 50px 0px 50px 0px;
+}
+
+section h3 {
+    font-size: 35px;
+    text-align: center;
+}
+
+section h3::after {
+    content: "";
+    border-bottom: 5px solid grey;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+
+#aboutus {
+    text-align: center;
+    background-color: white;
+}
+
+section p.ringkasan {
+    font-size: 18px;
+}
+
+section p.konten-isi {
+    font-style: italic;
+    color: grey;
+}
+
+/* CONTACT US */
+#contactus {
+    background-color: #E6E6E6;
+}
+#contactus p.kontak {
+    text-align: justify;
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+}
+
+/* AKHIR KONTAK */
+
+/* FOOTER  */
+footer {
+    background-color: #929292;
+    padding: 20px 0px 20px 0px;
+}
+
+#bawah ul p{
+    font-size: 18px;
+}
+
+#bawah ul li {
+    list-style-type: none;
+    padding: 10px 0px 10px 0px;
+}
+#bawah ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#bawah p.copyright {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+#bawah ul li a:hover {
+    text-decoration: underline;
+}
+
+footer#bawah .sosmed a img{
+    padding: 0px 10px 0px 10px;
+    justify-content: space-between;
+    width: 30px;
+}
+
+footer#bawah .sosmed a img:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+/* AKHIR FOOTER */
+@media screen and (max-width:991.98px) {
+    .layar-dalam {
+        width: 90%;
+    }
+
+    nav .menu ul {
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    } 
+
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid #b1b1b1;
+        background-color: rgba(255, 255, 255 , 0.25);
+        line-height: 40px;
+    }
+
+    nav .menu ul li a {
+        color: black;
+    }
+
+    .tombol-menu{
+        display: flex;
+    }
+}
