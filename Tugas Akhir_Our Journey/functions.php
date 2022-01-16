@@ -38,7 +38,7 @@ function posting($data){
 
 	$query = "INSERT INTO beranda
 				VALUES
-				('','$avatar', '$username', '$gambar', '$caption')
+				( 0 ,'$avatar', '$username', '$gambar', '$caption')
 				";
 
 	mysqli_query($conn, $query);
@@ -260,7 +260,7 @@ function registrasi($data){
 
 
 	//TAMBAHKAN USER BARU KE DATABASE
-	mysqli_query($conn, "INSERT INTO user VALUES('','$username','$email' , '$password')");
+	mysqli_query($conn, "INSERT INTO user VALUES( 0 ,'$username','$email' , '$password')");
 
 	return mysqli_affected_rows($conn);
 }
